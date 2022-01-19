@@ -76,21 +76,20 @@ loop = function(){
     }
 
     context.fillStyle = "#202020";
-    context.fillReact(0,0,320,180);
-    context.fillStyle = "#ff0000";
-    context.begainPath();
-    context.rect(rectangle.x,rectangle.y,rectangle.width,rectangle.height)
+    context.fillRect(0, 0, 320, 180);// x, y, width, height
+    context.fillStyle = "#ff0000";// hex for red
+    context.beginPath();
+    context.rect(rectangle.x, rectangle.y, rectangle.width, rectangle.height);
     context.fill();
     context.strokeStyle = "#202830";
     context.lineWidth = 4;
-    context.begainPath();
-    context.moveTo(0,164);
-    context.lineTo(320,164);
+    context.beginPath();
+    context.moveTo(0, 164);
+    context.lineTo(320, 164);
     context.stroke();
 
-    // call update when the browser is ready to draw again
-
-    window.requestAnimationFrame(loop)
+  // call update when the browser is ready to draw again
+  window.requestAnimationFrame(loop);
 
 };
 
