@@ -81,7 +81,7 @@ loop = function(){
     context.beginPath();
     context.rect(rectangle.x, rectangle.y, rectangle.width, rectangle.height);
     context.fill();
-    context.strokeStyle = "#202830";
+    context.strokeStyle = "#ffffff";
     context.lineWidth = 4;
     context.beginPath();
     context.moveTo(0, 164);
