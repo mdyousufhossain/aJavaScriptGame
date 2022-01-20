@@ -41,6 +41,7 @@ controller = {
     }
 };
 
+//loop func 
 
 loop = function(){
 
@@ -98,7 +99,7 @@ loop = function(){
 
 };
 
-
+// event listerner 
 window.addEventListener("keydown",controller.keyListener)
 window.addEventListener("keyup", controller.keyListener);
 window.requestAnimationFrame(loop)
