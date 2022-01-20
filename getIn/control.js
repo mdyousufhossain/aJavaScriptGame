@@ -71,6 +71,7 @@ loop = function(){
 
     // if rectangle is going off the left of the sceen
 
+
     if(rectangle.x <-32) {
         rectangle.x = 320;
     } 
@@ -78,6 +79,7 @@ loop = function(){
         rectangle.x = -32;
     }
 
+    
     context.fillStyle = "#202020";
     context.fillRect(0, 0, 320, 180);// x, y, width, height
     context.fillStyle = "#ff0000";// hex for red
@@ -95,6 +97,7 @@ loop = function(){
   window.requestAnimationFrame(loop);
 
 };
+
 
 window.addEventListener("keydown",controller.keyListener)
 window.addEventListener("keyup", controller.keyListener);
