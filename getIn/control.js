@@ -1,5 +1,5 @@
 // 20/1/22 --THIS IS FIRSTDAY AT GAME MAKING 
-
+// 21/1/22 some edit and update 
 
 var context , controller , rectangle, loop ;
 
