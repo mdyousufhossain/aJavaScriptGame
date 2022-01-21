@@ -16,26 +16,37 @@
 
 
 
-        // function Human(name){
-        //     this.name = name  ;
-        // }
+        function Human(name) {
+            this.name = name  ;
+        }
 
         // var human = new Human('dude');
-            class Human{
-                constructor(name){
-                    this.name = name ;
 
-                }
+        function Worker(name,job){
 
-             
-            }
+            Human.call(this,name)
+            this.job = job;
+        }
 
-            var human = new Human('bumi')
+
+let besome  = new Worker("Rubsa","masterdating");
+
+console.log(`${besome.name} is doing ${besome.job}`)
+
+doThis.innerHTML = `${besome.name} is doing ${besome.job}`
+
+            // class Human{
+            //     constructor(name){
+            //         this.name = name ;
+            //     }
+            // }
+
+            // var human = new Human('bumi')
             
 
-        doThis.innerHTML = human.name ;
+    //     doThis.innerHTML = human.name ;
       
-       console.log(human)
+    //    console.log(human)       
     </script>
 
 </body>
